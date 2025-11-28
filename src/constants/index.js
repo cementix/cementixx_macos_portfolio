@@ -113,17 +113,17 @@ const socials = [
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    text: "Telegram",
+    icon: "/icons/telegram.svg",
+    bg: "lime",
+    link: "https://t.me/cementixx",
   },
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    bg: "black",
+    link: "https://x.com/cementix_",
   },
   {
     id: 4,
