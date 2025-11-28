@@ -74,31 +74,6 @@ const dockApps = [
   },
 ];
 
-const blogPosts = [
-  {
-    id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-  },
-  {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-  },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-  },
-];
-
 const techStack = [
   {
     category: "Frontend",
@@ -134,7 +109,7 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/cementix",
   },
   {
     id: 2,
@@ -155,7 +130,7 @@ const socials = [
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/bohdanCementix",
   },
 ];
 
@@ -210,7 +185,6 @@ export {
   navLinks,
   navIcons,
   dockApps,
-  blogPosts,
   techStack,
   socials,
   photosLinks,
@@ -227,7 +201,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Messenger Clone",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -235,44 +209,33 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Messenger Clone.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "a real-time chat built with next.js and typescript. ",
+            "features authentication, notifications, and live message sync via pusher.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "messenger-clone.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://messenger-clone-two-weld.vercel.app/users",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "messenger-clone.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          imageUrl: "/images/messenger-clone-screenshot.png",
         },
       ],
     },
@@ -280,7 +243,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "MERN Food Delivery App",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -288,44 +251,33 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "MERN Food Delivery App.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "full-stack food ordering system built with the mern stack and stripe. ",
+            "jwt auth, live order tracking and clean ui.",
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "mern-food.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://mern-food-ordering-app-frontend-4cv5.onrender.com/",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "mern food.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
+          imageUrl: "/images/mern-food.png",
         },
       ],
     },
@@ -333,7 +285,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "BEM Landing",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -341,44 +293,74 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "BEM Landing.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "responsive html/scss landing built with the bem methodology.",
+            "simple, modular, and easy to extend for multi-section layouts.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "bem-landing.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://cementix.github.io/layout_landing-page/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "bem-landing.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/bem-landing.jpg",
+        },
+      ],
+    },
+
+    {
+      id: 8,
+      name: "Python RPG Creator",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-64 left-80",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "py rpg creator.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-16",
+          description: [
+            "minimal python template focused on oop structure and json data export.",
+            "built for experimenting with class design, inheritance and ui logic.",
+          ],
         },
         {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
+          id: 2,
+          name: "rpg-char.github.com",
+          icon: "/images/safari.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          fileType: "url",
+          href: "https://github.com/cementix/py_rpg_char_creator",
+          position: "top-16 right-20",
+        },
+        {
+          id: 4,
+          name: "rpg char.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-100",
+          imageUrl: "/images/rpg-char.jpg",
         },
       ],
     },

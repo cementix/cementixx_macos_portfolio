@@ -74,17 +74,41 @@ const Welcome = () => {
   }, []);
 
   return (
-    <section id="welcome">
-      <p ref={subtitleRef}>
-        {" "}
+    <section
+      id="welcome"
+      className="relative"
+      style={{
+        backgroundPosition: "center calc(50% - 140px)",
+      }}
+    >
+      <p
+        ref={subtitleRef}
+        className="relative z-10 -mt-36"
+        style={{
+          color: "#f5f5f5",
+          fontWeight: 400,
+          textShadow: "0 3px 8px rgba(0,0,0,0.55)",
+        }}
+      >
         {renderText(
           "Hey, I'm Bohdan! Welcome to my",
           "text-3xl font-georama",
-          300
+          350
         )}
       </p>
-      <h1 ref={titleRef} className="mt-7">
-        {renderText("portfolio", "text-9xl italic font-georama")}
+
+      <h1
+        ref={titleRef}
+        className="relative z-10 mt-6"
+        style={{
+          color: "#ffffff",
+          textShadow: "0 6px 16px rgba(0,0,0,0.75)",
+        }}
+      >
+        {renderText(
+          "portfolio",
+          "text-[9rem] italic font-georama leading-[0.8]"
+        )}
       </h1>
 
       <div className="small-screen">
