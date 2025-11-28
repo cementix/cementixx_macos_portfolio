@@ -198,14 +198,13 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // ▶ Project 1
     {
       id: 5,
       name: "Messenger Clone",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      windowPosition: "top-[67vh] left-[30vh]", // optional: Finder window position
       children: [
         {
           id: 1,
@@ -240,14 +239,13 @@ const WORK_LOCATION = {
       ],
     },
 
-    // ▶ Project 2
     {
       id: 6,
       name: "MERN Food Delivery App",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      windowPosition: "top-[56vh] left-24",
       children: [
         {
           id: 1,
@@ -289,7 +287,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[62vh] right-36",
       children: [
         {
           id: 1,
@@ -330,7 +328,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-64 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[70vh] left-7",
       children: [
         {
           id: 1,
