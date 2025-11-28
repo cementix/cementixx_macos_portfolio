@@ -62,6 +62,7 @@ const setupTextHover = (container, type) => {
 const Welcome = () => {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
+  const sectionRef = useRef(null);
 
   useGSAP(() => {
     const titleCleanup = setupTextHover(titleRef.current, "title");
@@ -73,9 +74,55 @@ const Welcome = () => {
     };
   }, []);
 
+  useGSAP(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const titleLetters = titleRef.current
+      ? titleRef.current.querySelectorAll("span")
+      : [];
+    const subtitleLetters = subtitleRef.current
+      ? subtitleRef.current.querySelectorAll("span")
+      : [];
+
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+    if (typeof document !== "undefined") {
+      tl.fromTo(
+        document.body,
+        { backgroundSize: "115%" },
+        { backgroundSize: "cover", duration: 1.4, ease: "power2.out" },
+        0
+      );
+    }
+
+    tl.fromTo(
+      section,
+      { opacity: 0, backgroundPosition: "center 80%" },
+      {
+        opacity: 1,
+        backgroundPosition: "center calc(50% - 140px)",
+        duration: 1.2,
+      }
+    )
+      .fromTo(
+        subtitleLetters,
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.02 },
+        "-=0.7"
+      )
+      .fromTo(
+        titleLetters,
+        { y: 60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, stagger: 0.03 },
+        "-=0.4"
+      );
+  }, []);
+
   return (
     <section
       id="welcome"
+      ref={sectionRef}
       className="relative"
       style={{
         backgroundPosition: "center calc(50% - 140px)",

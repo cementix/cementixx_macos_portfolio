@@ -11,6 +11,17 @@ const Dock = () => {
 
   useGSAP(() => {
     const dock = dockRef.current;
+    if (!dock) return;
+
+    gsap.fromTo(
+      dock,
+      { y: 120, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.9, ease: "power3.out", delay: 0.3 }
+    );
+  }, []);
+
+  useGSAP(() => {
+    const dock = dockRef.current;
     if (!dock) return () => {};
 
     const icons = dock.querySelectorAll(".dock-icon");
