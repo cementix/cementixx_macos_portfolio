@@ -3,8 +3,8 @@ import gsap from "gsap";
 import { useRef } from "react";
 
 const FONT_WEIGHTS = {
-  subtitle: { min: 100, max: 400, default: 200 },
-  title: { min: 400, max: 900, default: 400 },
+  subtitle: { min: 100, max: 400, default: 300 },
+  title: { min: 400, max: 900, default: 500 },
 };
 
 const renderText = (text, className, baseWeight = 400) => {
@@ -42,7 +42,7 @@ const setupTextHover = (container, type) => {
       const distance = Math.abs(mouseX - (l - left + w / 2));
       const intensity = Math.exp(-(distance ** 2) / 15000);
 
-      animateLetter(letter, min + (max - min) * intensity);
+      animateLetter(letter, min + (max - min + 100) * intensity);
     });
   };
 
@@ -80,7 +80,7 @@ const Welcome = () => {
         {renderText(
           "Hey, I'm Bohdan! Welcome to my",
           "text-3xl font-georama",
-          200
+          300
         )}
       </p>
       <h1 ref={titleRef} className="mt-7">
