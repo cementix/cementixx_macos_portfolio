@@ -356,8 +356,53 @@ const WORK_LOCATION = {
         },
       ],
     },
+
+    {
+      id: 9,
+      name: "ListIQ",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-36 right-5",
+      windowPosition: "top-[46vh] right-12",
+      children: [
+        {
+          id: 1,
+          name: "ListIQ.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          subtitle: "A personal library for what you watch, read, and play",
+          description: [
+            "ListIQ brings movies, TV series, anime, manga, games, books, and comics into one library. Track your progress, rate and review titles, and save what you want to pick up next.",
+            "Browse a deck of recommendations, share curated lists, or suggest missing titles for moderation.",
+            "Built with Next.js, TypeScript, Prisma, and PostgreSQL.",
+          ],
+        },
+        {
+          id: 2,
+          name: "listiq-topaz.vercel.app",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://listiq-topaz.vercel.app/",
+          position: "top-10 right-10",
+        },
+        {
+          id: 4,
+          name: "listiq-dashboard.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-52",
+          imageUrl: "/images/listiq-dashboard.png",
+        },
+      ],
+    },
   ],
 };
+
+const ABOUT_PHOTO = "/images/me.png";
 
 const ABOUT_LOCATION = {
   id: 2,
@@ -373,7 +418,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/me.jpg",
+      imageUrl: ABOUT_PHOTO,
     },
     {
       id: 4,
@@ -383,7 +428,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/bohdan-7.jpg",
+      image: ABOUT_PHOTO,
       description: [
         "Hey! I’m Bohdan 👋, a developer who enjoys building clean, minimal, and atmospheric interfaces.",
         "I work mostly with JavaScript and React, focusing on smooth UI, subtle animations, and layouts that feel intentional.",
